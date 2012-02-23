@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="preferences_alarm_enabled"
+        android:title="Alarm włączony" />
+
+    <pl.geek.tewu.preferenceDialogs.TimePreference
+        android:defaultValue="08:00"
+        android:key="preferences_alarm_time"
+        android:showDefault="true"
+        android:summary="Czas aktywacji budzika"
+        android:title="Czas budzika" />
+
+    <EditTextPreference
+        android:key="preferences_alarm_label"
+        android:summary="Etykieta budzika"
+        android:title="Etykieta" />
+
+    <RingtonePreference
+        android:defaultValue="content://settings/system/alarm_alert"
+        android:key="preferences_alarm_ringtone"
+        android:ringtoneType="alarm"
+        android:title="Dzwonek" />
+
+    <pl.geek.tewu.preferenceDialogs.VolumeSeekBarPreference
+        android:defaultValue="100"
+        android:dialogMessage="Głośność dzwonka"
+        android:key="preferences_alarm_volume"
+        android:max="100"
+        android:title="Głośność" />
+
+    <PreferenceScreen
+        android:key="advanced_preferences"
+        android:title="Ustawienia zaawansowane" >
+        <pl.geek.tewu.preferenceDialogs.SeekBarPreference
+            android:defaultValue="8"
+            android:dialogMessage="Długość drzemki w minutach"
+            android:key="preferences_alarm_snooze_time"
+            android:max="30"
+            android:title="Długość drzemki" />
+        <pl.geek.tewu.preferenceDialogs.SeekBarPreference
+            android:defaultValue="10"
+            android:dialogMessage="Długość alarmu w minutach"
+            android:key="preferences_alarm_autosilence_time"
+            android:max="60"
+            android:title="Długość alarmu" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="preferences_alarm_incremental_volume"
+            android:summary="Budzik stopniowo osiąga docelową głośność"
+            android:title="Narastająca głośność" />
+
+        <pl.geek.tewu.preferenceDialogs.SeekBarPreference
+            android:defaultValue="25"
+            android:dependency="preferences_alarm_incremental_volume"
+            android:dialogMessage="Szybkość narastania głośności"
+            android:key="preferences_alarm_incremental_volume_speed"
+            android:max="33"
+            android:title="Szybkość narastania głośności" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="preferences_alarm_fullscreen"
+            android:summary="Ukryj pasek powiadomień"
+            android:title="FullScreen" />
+    </PreferenceScreen>
+
+</PreferenceScreen>

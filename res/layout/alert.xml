@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/alarm_timeout_message"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#f00"
+        android:text="Budzik wyciszony automatycznie!!"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/snooze_button"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:onClick="onSnoozeClicked"
+        android:text="@string/snooze" />
+
+</LinearLayout>

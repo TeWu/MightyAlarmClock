@@ -1,10 +1,5 @@
 package pl.geek.tewu.preferenceDialogs;
 
-/*
- * The following code was written by Matthew Wiggins and is released under the APACHE 2.0 license
- * http://www.apache.org/licenses/LICENSE-2.0
- */
-
 import pl.geek.tewu.AlarmPlayer;
 import android.content.Context;
 import android.content.DialogInterface;

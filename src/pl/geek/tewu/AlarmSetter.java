@@ -12,18 +12,6 @@ import android.preference.PreferenceManager;
 import android.util.Log;
 import android.widget.Toast;
 
-// FIXME:
-// (DONE) volume relative to media channel
-// (DONE) selectable alarm sound
-// (DONE) alarm volume preview
-// (DONE) Incrising volume
-//
-// alarm notification icon not appearing on reboot-set alert
-// Sound Alarm when low on battery
-// continuously show time till next alarm in main activity
-// testowanie budzika powoduje jego dismiss a to wywo³uje jego w³¹czenie jednoczeœnie nie zaznaczaj¹c
-// checkboxa "Budzik w³¹czony"
-
 public class AlarmSetter {
     private static AlarmSetter soleInstance;
     

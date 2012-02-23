@@ -134,7 +134,7 @@ public class AlarmActivity extends Activity {
             alarmPlayer.release();
         }
         
-        if (!dismissed && !snoozed && !fake) { // je¿eli ani dismissed ani snoozed nie jest true (ani nie jest to tylko testowanie alarmu) to coœ ubi³o nasz¹ activity = failsafe snooze
+        if (!dismissed && !snoozed && !fake) { // if not dismissed nor snoozed (and not fake alarm) then smth kill my activity = failsafe snooze
             AlarmSetter alarmSetter = AlarmSetter.getInstance(this);
             alarmSetter.setSnooze(1000 * 10);
             Toast.makeText(this,"FailsSafe Snooze",Toast.LENGTH_SHORT).show();
